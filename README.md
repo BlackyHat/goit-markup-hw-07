@@ -1,7 +1,7 @@
-# goit-markup-hw-06
+# goit-markup-hw-07
 
-Home Work 06
+Home Work 07
 
-# https://blackyhat.github.io/goit-markup-hw-06/
+# https://blackyhat.github.io/goit-markup-hw-07/
 
 FORMS
