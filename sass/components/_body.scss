@@ -1,9 +1,8 @@
 body {
+  @include marginAuto();
   background-color: $primary-white-color;
   color: $primary-text-color;
-  font-family: Roboto, monospace;
-  margin-left: auto;
-  margin-right: auto;
+  font-family: $primaryFontFamily;
 }
 
 .list {
@@ -34,11 +33,10 @@ img {
 }
 
 .container {
+  @include marginAuto();
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .section {

@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* FONTS */
+/* FONTS COLORS*/
 /* COLORS */
 /* BACKGROUND */
 /* BORDERS COLORS */
@@ -256,12 +256,32 @@ summary {
   display: list-item;
 }
 
+.filter__button, .modal__button, .hero__button, .subscribe__button {
+  border-radius: 4px;
+  color: #ffffff;
+  background-color: rgb(33, 150, 243);
+  border: none;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  text-align: center;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  transition-property: color, background-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.filter__button:focus, .modal__button:focus, .hero__button:focus, .subscribe__button:focus, .filter__button:hover, .modal__button:hover, .hero__button:hover, .subscribe__button:hover {
+  background-color: #188ce8;
+}
+
 body {
+  margin-right: auto;
+  margin-left: auto;
   background-color: #ffffff;
   color: #757575;
   font-family: Roboto, monospace;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .list {
@@ -292,11 +312,11 @@ img {
 }
 
 .container {
+  margin-right: auto;
+  margin-left: auto;
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .section {
@@ -328,26 +348,6 @@ img {
           clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-
-.filter__button, .modal__button, .hero__button, .subscribe__button {
-  border-radius: 4px;
-  color: #ffffff;
-  background-color: rgb(33, 150, 243);
-  border: none;
-  font-family: inherit;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.875;
-  text-align: center;
-  letter-spacing: 0.06em;
-  cursor: pointer;
-  transition-property: color, background-color, box-shadow;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.filter__button:focus, .modal__button:focus, .hero__button:focus, .subscribe__button:focus, .filter__button:hover, .modal__button:hover, .hero__button:hover, .subscribe__button:hover {
-  background-color: #188ce8;
 }
 
 /* СЕКЦІЯ ХЕДЕР */
@@ -899,10 +899,10 @@ img {
 }
 
 .modal__button {
-  display: block;
-  margin-top: 30px;
   margin-right: auto;
   margin-left: auto;
+  display: block;
+  margin-top: 30px;
   width: 200px;
   height: 50px;
   padding: 10px 55px;

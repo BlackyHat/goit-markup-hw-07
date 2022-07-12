@@ -1,7 +1,5 @@
 .social {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include displayFlex();
 
   &__item:not(:first-child) {
     margin-left: 10px;
@@ -9,9 +7,8 @@
 }
 
 .social__link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include displayFlex();
+
   color: $social-buttons-color;
   width: 44px;
   height: 44px;
